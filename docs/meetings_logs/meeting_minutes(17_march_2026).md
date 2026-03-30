@@ -20,7 +20,7 @@ Thabiso Nkambule              Team Member                    Present
 # 2.1 Project Roles & Presentation Structure
 
 • Discussion: The team discussed the five standard software development roles
-(e.g., Programmer, Designer, Analyst, Tester, etc.) as outlined in the project
+(e.g Programmer, Designer, Analyst, Tester, etc.) as outlined in the project
 rubric.
 
 • Outcome: Roles will be assigned to provide focus for presentations. However,
