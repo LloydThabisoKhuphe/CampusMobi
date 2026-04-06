@@ -83,8 +83,7 @@ Open browser
 http://localhost:3000
 
 ##  Project Structure
---- 
-
+```
 CampusConnect/
 │
 ├── docs/
@@ -123,7 +122,7 @@ CampusConnect/
 │
 ├── package.json
 └── README.md
----
+```
 # Configuration
 All configuration settings are stored in:
 
