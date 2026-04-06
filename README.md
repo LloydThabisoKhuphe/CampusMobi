@@ -83,23 +83,24 @@ Open browser
 http://localhost:3000
 
 ##  Project Structure
+--- 
+
 CampusConnect/
 │
-│   ├── docs/
-│   │   ├── meetings_logs/
-│   │   ├── product_vision.md
-│   │   └── Software_management_plan.md
+├── docs/
+│   ├── meetings_logs/
+│   ├── product_vision.md
+│   └── Software_management_plan.md
 │
 ├── public/
 │   └── index.html
 │
 ├── src/
-│
 │   ├── components/
 │   │   ├── Navbar.js
 │   │   ├── WalletCard.js
 │   │   └── MapComponent.js
-│
+│   │
 │   ├── pages/
 │   │   ├── HomePage.js
 │   │   ├── CardPage.js
@@ -108,21 +109,21 @@ CampusConnect/
 │   │   ├── PrintingPage.js
 │   │   ├── CafeteriaPage.js
 │   │   └── ProfilePage.js
-│
+│   │
 │   ├── services/
 │   │   ├── AuthService.js
 │   │   ├── WalletService.js
 │   │   └── PrintingService.js
-│
+│   │
 │   ├── constants/
 │   │   └── AppConstants.js
-│
+│   │
 │   ├── App.js
-│   ├── index.js
+│   └── index.js
 │
 ├── package.json
 └── README.md
-
+---
 # Configuration
 All configuration settings are stored in:
 
