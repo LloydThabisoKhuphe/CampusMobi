@@ -4,7 +4,7 @@
 This document outlines the project management approach for the development of the Campus-Mobi system. It defines team roles, project timelines, risk management strategies, and the technology stack that will be used to successfully deliver the project.
 
 ## 2.	Team Members & Roles       
-
+```
 ## Team Member                  Role & Responsibilities
 
 Ayanda Dunywa	                Project Manager
@@ -33,13 +33,14 @@ Ayanda Dunywa	                Responsible for maintaining project documentation,
 
 Rialivhuwa Makhado 	            Tester
                                 Responsible for testing the system for bugs, security issues, and performance to ensure reliability 
-
+```
 
 
 
 ## 3.	Project Timeline
 The project will be developed in phases to ensure structured progress and timely completion.
 
+```
 ## Phase	           Task	                                                    Deadlines
    Phase 1 	           Product Vision, Wireframes, Management Plan	            17 March 2026
 
@@ -49,6 +50,7 @@ The project will be developed in phases to ensure structured progress and timely
 
    Phase 4		
 
+```
 
 ## 4.	Project Management Approach
 
