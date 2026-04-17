@@ -28,6 +28,7 @@ Responsible for testing system functionality, identifying bugs, and maintaining 
 The project will be divided into short sprints so that we can focus on specific features at a time.
 
 **Sprint Duration**: 1–2 weeks
+
 **Total Sprints: 4**
 
 **Sprint Breakdown**
@@ -40,15 +41,22 @@ Implement the campus map and notifications features.
 
 **Agile Practices**:
 **Sprint Planning**: At the start of each sprint (Microsoft Teams)
+
 **Daily Scrum / Check-in**: Every Wednesday at **6:00 pm** (WhatsApp)
+
 **Sprint Review**: End of each sprint
+
 **Sprint Retrospective**: End of each sprint (what went well / what to improve)
 
 ## 4. Tools and Communication
 **GitHub** Version control, task tracking, and project board management
+
 **GitHub Projects** – Main task tracking board (To Do → In Progress → Review → Done)
+
 **WhatsApp** Daily communication and quick updates
+
 **Microsoft Teams** Weekly meetings and sprint reviews
+
 **Figma** UI/UX design and wireframe development
 
 ## 5. How We Will Work
@@ -58,4 +66,4 @@ Implement the campus map and notifications features.
 We will also reflect on what worked well and what we can improve for the next sprint.
 
 ## 6. Conclusion
-By following the Scrum methodology, the team will ensure structured development, continuous improvement, and effective collaboration. This approach will help the team deliver a functional and high-quality CampusMobi system within the given timeframe.git
+By following the Scrum methodology, the team will ensure structured development, continuous improvement, and effective collaboration. This approach will help the team deliver a functional and high-quality CampusMobi system within the given timeframe
