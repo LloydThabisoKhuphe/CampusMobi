@@ -177,4 +177,4 @@ Install Example:
 - The system is developed as a Minimum Viable Product (MVP).
 
 # Authors
-CampusMobi team members
+CampusMobi team members 
