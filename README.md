@@ -1,95 +1,91 @@
-## CampusMobi –  Web Application
-A comprehensive web-based campus application designed for students and staff at Walter Sisulu University.
+# CampusMobi –  Web Application
+CampusMobi is a web-based campus assistant application designed for students at **Walter Sisulu University**.The goal of the system is to help students manage their daily academic and campus activities in one place.
 
-App is for Students and staff members within the Institution initially for Walter Sisule University, this app allows users to view their cards (staff/student) for Accessing so facilities e.g library , study centre and etc , this app also helps with the navigation within the campus showing you a map or route to take in order to go to a specific destination , and it also allws users to get access to the printing machines and purchasing at the cafeteria which works hand in hand with a built-in Wallet
+Instead of relying on multiple systems or physical tools, CampusMobi provides a single platform where students can access their digital identity, manage their schedule, receive reminders, and explore campus locations.
 
-Built with React.js – Modern frontend framework for scalable web applications.
+Built using **React.js**, the system is designed to be lightweight, easy to use, and accessible through any modern web browser.
 
-# Features
-Digital Campus Card
-Virtual Student/Staff ID card
+## Features
 
-Used to access facilities such as:
+### User Authentication
+Students can log into the system securely and access their personal dashboard.
 
-Library
-Study centres
-Computer labs
-Restricted campus buildings
-Campus Navigation
-Interactive campus map
+### Dashboard
+A central dashboard allows users to easily navigate between all system features.
 
-Route guidance to locations such as:
+### Virtual Student Card
+A digital student card is provided within the system. It displays student details along with a QR code that can be used for identification purposes when accessing campus facilities.
 
-Lecture halls
-Administration offices
-Cafeterias
-Printing stations
-Libraries
-Built-in Wallet
-Secure digital wallet linked to the user account
+### Calendar
+The system provides a calendar where students can:
 
-Used to pay for:
+- View their academic schedule
+- Manage events such as classes
 
-Printing services
-Cafeteria purchases
-Other campus services
-Printing Machine Access
-Send documents to campus printers
-Pay directly using wallet balance
-View printing history
-Facility Access
-Digital card used to access:
+### Schedule Notifications
+Notifications are generated based on calendar events to:
 
-Library
-Study centre
-Campus buildings
-User Profiles
-Users can:
+- Remind students of upcoming classes
+- Help students stay organized
 
-View their digital card
-Check wallet balance
-Track transaction history
-Update profile information
-Web-Based Platform
-Accessible through any browser:
+### Campus Map
+Students can view a simplified campus map or list of locations, including:
+- Lecture halls
+- Library
+- Administration offices
 
-Chrome
-Safari
-Edge
-Firefox
-Example:
+Selecting a location shows basic information to assist with navigation.
 
-https://campusMobi.co.za
-Getting Started
-Prerequisites
-Node.js (v18 or higher)
-npm or yarn
-Modern browser
-Check Node version:
+### Wallet (Demo)
+The wallet feature allows students to:
+- View a balance
+- Simulate adding funds
+- Simulate payments
 
+>**Note**: This feature is for demonstration purposes only and does not involve real transactions.
+
+### Web-Based Platform
+CampusMobi runs in a web browser and can be accessed on:
+- Chrome
+- Edge
+- Safari
+- Firefox
+
+**Development URL (Example)**: `http://localhost:3000`
+
+## Getting Started
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- Modern browser
+
+**Check Node version:**
 node -v
-Quick Installation
-Navigate to project folder
 
-cd CampusMobi
-Install dependencies
+## Quick Installation
 
-npm install
-Start development server
+1. Navigate to project folder
+> cd CampusMobi
 
-npm start
-Open browser
+2. Install dependencies
+> npm install
 
+3. Start development server
+> npm start
+
+4. Open browser
 http://localhost:3000
 
 ##  Project Structure
 ```
-CampusConnect/
+CampusMobi/
 │
 ├── docs/
-│   ├── meetings_logs/
+│   ├── meeting_logs/
+│   ├── agile/
+│   ├── features/
 │   ├── product_vision.md
-│   └── Software_management_plan.md
+│   └── software_management_plan.md
 │
 ├── public/
 │   └── index.html
@@ -101,18 +97,17 @@ CampusConnect/
 │   │   └── MapComponent.js
 │   │
 │   ├── pages/
-│   │   ├── HomePage.js
+│   │   ├── LoginPage.js
+│   │   ├── Dashboard.js
 │   │   ├── CardPage.js
-│   │   ├── WalletPage.js
+│   │   ├── CalendarPage.js
 │   │   ├── MapPage.js
-│   │   ├── PrintingPage.js
-│   │   ├── CafeteriaPage.js
-│   │   └── ProfilePage.js
+│   │   ├── WalletPage.js
+│   │   └── NotificationsPage.js
 │   │
 │   ├── services/
 │   │   ├── AuthService.js
-│   │   ├── WalletService.js
-│   │   └── PrintingService.js
+│   │   └── WalletService.js
 │   │
 │   ├── constants/
 │   │   └── AppConstants.js
@@ -123,14 +118,15 @@ CampusConnect/
 ├── package.json
 └── README.md
 ```
-# Configuration
+## Configuration
 All configuration settings are stored in:
 
 src/constants/AppConstants.js
+
 Example:
 
 export const APP_INFO = {
-  APP_NAME: "Campus Connect",
+  APP_NAME: "CampusMobi",
   UNIVERSITY: "Walter Sisulu University",
   VERSION: "1.0.0"
 };
@@ -143,82 +139,42 @@ export const COLORS = {
 Feature Flags
 export const FEATURES = {
   ENABLE_WALLET: true,
-  ENABLE_PRINTING: true,
   ENABLE_CAMPUS_MAP: true
 };
-Campus Map Integration
-Campus navigation can use APIs such as:
 
-Google Maps API
-OpenStreetMap
-Mapbox
-Example:
+## Building for Production
+To create an optimized production build:
 
-src/components/MapComponent.js
-Features:
+> npm run build
 
-Show buildings
-Show route directions
-Locate facilities
-Building for Production
-Create optimized build:
+Production files will be generated in /build folder
+These files can be deployed using:
 
-npm run build
-Production files will be generated in:
+- Vercel
+- Netlify
+- Render
 
-/build
-These files can be deployed to:
-
-Vercel
-Netlify
-AWS
-Render
-Deployment
+## Deployment
 Example deployment using Vercel:
 
-npm install -g vercel
+> npm install -g vercel
 vercel
+
 After deployment the app will be accessible online.
 
-Example:
+## Key Dependencies
+- React.js
+- React Router
+- Axios
 
-https://campusconnect.vercel.app
-Key Dependencies
-React.js
-React Router
-Axios (API requests)
-Material UI or TailwindCSS
-Google Maps API
-Example:
+Install Example:
+> npm install react-router-dom axios
 
-npm install react-router-dom axios
-API Integration
-The frontend connects to a backend API.
-
-Example backend technologies:
-
-Node.js
-
-Example API service:
-
-src/services/WalletService.js
-Example:
-
-import axios from "axios";
-
-export const getWalletBalance = async (userId) => {
-  const response = await axios.get(`/api/wallet/${userId}`);
-  return response.data;
-};
-Troubleshooting
-Clear cache
-
-npm cache clean --force
-Reset project
-
-rm -rf node_modules
-npm install
-npm start
+## Notes
+- The wallet system uses simulated transactions (no real payments).
+- Notifications are triggered from calendar events.
+- The campus map is simplified and does not use external APIs.
+- The system is developed as a Minimum Viable Product (MVP).
 
 # Authors
 CampusMobi team members
