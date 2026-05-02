@@ -122,7 +122,7 @@ CampusMobi/
 All configuration settings are stored in:
 
 src/constants/AppConstants.js
-
+```
 Example:
 
 export const APP_INFO = {
@@ -141,7 +141,7 @@ export const FEATURES = {
   ENABLE_WALLET: true,
   ENABLE_CAMPUS_MAP: true
 };
-
+```
 ## Building for Production
 To create an optimized production build:
 
