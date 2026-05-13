@@ -1,7 +1,7 @@
 ## CampusMobi –  Web Application
 A comprehensive web-based campus application designed for students and staff at Walter Sisulu University.
 
-App is for Students and staff members within the Institution initially for Walter Sisule University, this app allows users to view their cards (staff/student) for Accessing so facilities e.g library , study centre and etc , this app also helps with the navigation within the campus showing you a map or route to take in order to go to a specific destination , and it also allws users to get access to the printing machines and purchasing at the cafeteria which works hand in hand with a built-in Wallet
+This application is for Students and staff members within the Institution initially for Walter Sisulu University, this app allows users to view their cards (staff/student) for Accessing so facilities e.g library , study centre and etc , this app also helps with the navigation within the campus showing you a map or route to a specific destination , and it also allws users to get access to the printing machines and purchasing at the cafeteria which works hand in hand with a built-in Wallet.
 
 Built with React.js – Modern frontend framework for scalable web applications.
 
