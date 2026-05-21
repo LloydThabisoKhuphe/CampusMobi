@@ -2,10 +2,6 @@
 CampusMobi is a web-based campus assistant application designed for students at **Walter Sisulu University**.The goal of the system is to help students manage their daily academic and campus activities in one place.
 
 This application is for Students and staff members within the Institution initially for Walter Sisulu University, this app allows users to view their cards (staff/student) for Accessing so facilities e.g library , study centre and etc , this app also helps with the navigation within the campus showing you a map or route to a specific destination , and it also allws users to get access to the printing machines and purchasing at the cafeteria which works hand in hand with a built-in Wallet.
-
-Instead of relying on multiple systems or physical tools, CampusMobi provides a single platform where students can access their digital identity, manage their schedule, receive reminders, and explore campus locations.
-
-
 Built using **React.js**, the system is designed to be lightweight, easy to use, and accessible through any modern web browser.
 
 ## Features
@@ -57,7 +53,10 @@ CampusMobi runs in a web browser and can be accessed on:
 **Development URL (Example)**: `http://localhost:3000`
 
 ## Getting Started
-### Prerequisites
+
+## Using Node.js 
+
+#### Prerequisites
 - Node.js (v18 or higher)
 - npm or yarn
 - Modern browser
@@ -76,6 +75,38 @@ node -v
 3. Start development server
 > npm start
 
+## Using Springboot
+
+#### Prerequisites
+-Java Development Kit (JDK)
+-Apache Maven or Gradle
+-Modern browser
+-IDE such as IntelliJ IDEA or Visual Studio Code
+
+**Check Java version:**
+java -version
+
+**Check Maven version:**
+mvn -version
+
+## Quick Installation
+
+Navigate to project folder
+cd CampusMobi
+
+Build and install dependencies
+mvn clean install
+
+Start the Spring Boot application
+mvn spring-boot:run
+
+**Alternative (Using Gradle)**
+Build project
+./gradlew build
+Run application
+./gradlew bootRun 
+
+
 4. Open browser
 http://localhost:3000
 
@@ -92,7 +123,7 @@ CampusMobi/
 │
 ├── public/
 │   └── index.html
-│   └── index.css
+│
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.js
@@ -108,6 +139,9 @@ CampusMobi/
 │   │   ├── WalletPage.js
 │   │   └── NotificationsPage.js
 │   │
+│   ├── services/
+│   │   ├── AuthService.js
+│   │   └── WalletService.js
 │   │
 │   ├── constants/
 │   │   └── AppConstants.js
