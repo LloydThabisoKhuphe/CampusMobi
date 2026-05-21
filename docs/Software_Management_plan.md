@@ -63,7 +63,7 @@ The team will follow a simple Agile approach:
 - Changes are incorporated based on team feedback and progress
 
 ## 5.	Risk Management
-
+```
 The following risks have been identified along with solutions strategies:
 
 •	 Risk: Team members not contributing
@@ -80,23 +80,23 @@ Solution: Use WhatsApp or Microsoft Teams for continuous communication
 
 •	 Risk: Loss of project files or errors in code
 Solution: Use GitHub for version control and backups
-
+```
 ## 6.	Technology Stack
-
+```
 The following technologies will be used to develop the system:
 
 •	Frontend: HTML, CSS, JavaScript
 Used to design a simple, responsive, and user-friendly interface.
 
-•	Backend: Java/spring boot
+•	Backend: Java/spring boot or Node.js
 Used to handle system logic, user authentication, and data processing.
 
 •	Database: MySQL
-Used to store user data, transactions, and application records.
+Used to store user data, transactions(simulated), and application records.
 
 •	Version Control: GitHub
 Used for collaboration, version tracking, and project management.
-
+```
 ## 7.	Tools & Communication
 
 •	GitHub: Code management and collaboration
