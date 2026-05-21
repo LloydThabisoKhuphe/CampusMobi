@@ -2,6 +2,7 @@
 CampusMobi is a web-based campus assistant application designed for students at **Walter Sisulu University**.The goal of the system is to help students manage their daily academic and campus activities in one place.
 
 This application is for Students and staff members within the Institution initially for Walter Sisulu University, this app allows users to view their cards (staff/student) for Accessing so facilities e.g library , study centre and etc , this app also helps with the navigation within the campus showing you a map or route to a specific destination , and it also allws users to get access to the printing machines and purchasing at the cafeteria which works hand in hand with a built-in Wallet.
+<<<<<<< HEAD
 
 Instead of relying on multiple systems or physical tools, CampusMobi provides a single platform where students can access their digital identity, manage their schedule, receive reminders, and explore campus locations.
 
@@ -47,6 +48,49 @@ The wallet feature allows students to:
 
 >**Note**: This feature is for demonstration purposes only and does not involve real transactions.
 
+=======
+Built using **React.js**, the system is designed to be lightweight, easy to use, and accessible through any modern web browser.
+
+## Features
+
+### User Authentication
+Students can log into the system securely and access their personal dashboard.
+
+### Dashboard
+A central dashboard allows users to easily navigate between all system features.
+
+### Virtual Student Card
+A digital student card is provided within the system. It displays student details along with a QR code that can be used for identification purposes when accessing campus facilities.
+
+### Calendar
+The system provides a calendar where students can:
+
+- View their academic schedule
+- Manage events such as classes
+
+### Schedule Notifications
+Notifications are generated based on calendar events to:
+
+- Remind students of upcoming classes
+- Help students stay organized
+
+### Campus Map
+Students can view a simplified campus map or list of locations, including:
+- Lecture halls
+- Library
+- Administration offices
+
+Selecting a location shows basic information to assist with navigation.
+
+### Wallet (Demo)
+The wallet feature allows students to:
+- View a balance
+- Simulate adding funds
+- Simulate payments
+
+>**Note**: This feature is for demonstration purposes only and does not involve real transactions.
+
+>>>>>>> documents
 ### Web-Based Platform
 CampusMobi runs in a web browser and can be accessed on:
 - Chrome
