@@ -14,7 +14,7 @@ ensuring separation of concerns between the frontend, backend services, and data
 2. Virtual Student/Staff Card
 3. Campus Wallet
 4. Smart Campus Map & Navigation
-5. Cafeteria Service Integration
+5. Calendar
 6. Notification System
 
 ---
@@ -25,13 +25,13 @@ ensuring separation of concerns between the frontend, backend services, and data
 
 Handles all identity-related operations for students, staff, and administrators.
 
-- Secure login using student ID or staff email and password
+- Secure login using student/staff User-ID/email and password
 - Role-Based Access Control (RBAC) — distinguishes between Student, Staff, and Admin roles
   and restricts access to features accordingly
 - Session token generation and expiry (tokens expire after 24 hours)
 - Rate limiting on failed login attempts (max 5 per minute)
 - Password hashing using bcrypt
-- User profile management — view and update personal details, view activity and transaction
+- User profile management — view and update personal details, view activity and simulated transaction
   history
 
 **Interfaces with:** Virtual Card module (to confirm identity before generating card),
@@ -56,22 +56,15 @@ Admin Dashboard (access logs are viewable by admins)
 
 ---
 
-### 3. Campus Wallet
+### 3. Campus Wallet(demo)
 
 Manages all financial transactions and balances for campus services.
 
-- Displays current wallet balance on the user's home screen and profile page
-- Allows users to load funds via integrated payment gateways
-- Processes payments for cafeteria pre-orders
-- Maintains a full transaction history (amount, timestamp, service, reference number)
-- Triggers a low-balance alert when the wallet falls below a configurable threshold
-  (default: R20.00)
-- Encrypts all payment data in transit and at rest
-- Handles payment failures gracefully with appropriate user feedback
+- Displays current simulated wallet balance on the user's home screen and profile page
+- Allows users to simulate funds 
+- Maintains a full transaction history of the simulated wallet transaction
 
 **Interfaces with:** Authentication module (wallet is linked to a verified user account),
-Cafeteria Service (deducts payment on order confirmation), Notification System (triggers
-low-balance and payment-confirmation alerts)
 
 ---
 
@@ -94,36 +87,16 @@ points)
 
 ---
 
-### 5. Cafeteria Service Integration
-
-Enables students and staff to pre-order meals from the campus cafeteria, reducing queue times.
-
-- Displays the cafeteria menu with item names and prices
-- Allows users to select items, choose a collection time, and place an order
-- Deducts the order total from the Campus Wallet on confirmation
-- Generates a unique pickup reference number for each order
-- Stores order history and links it to the user profile
-- Prevents double-booking of the same collection slot where capacity is limited
-- Sends an order confirmation notification upon successful placement
-
-**Interfaces with:** Campus Wallet (payment processing and deduction), Notification System
-(order confirmation and collection-ready alerts), Authentication module (orders are tied to
-a verified user account)
-
----
-
 ### 6. Notification System
 
 Delivers in-app alerts to users based on system events triggered by other modules.
 
-- Low wallet balance alert (triggered when balance drops below threshold)
-- Payment confirmation notification (triggered after every successful wallet transaction)
-- Cafeteria order confirmation and collection-ready alerts
+- Generate reminders for upcoming events and lectures 
+- Display system notifcations (e.g updates)
 - Delivered via in-app notifications visible on the user's home screen
 - Planned extension to real-time notifications using WebSockets or a push notification service
 
-**Interfaces with:** Campus Wallet (financial event triggers), Cafeteria Service (order event
-triggers), Authentication module (account-level alerts)
+**Interfaces with:** Campus Wallet (financial event triggers)
 
 ---
 
@@ -133,7 +106,7 @@ triggers), Authentication module (account-level alerts)
 |-------------------------------|-----------------------------------|------------------------------------|
 | Authentication & User Mgmt    | —                                 | All other modules                  |
 | Virtual Student/Staff Card    | Authentication                    | Admin Dashboard, Access Points     |
-| Campus Wallet                 | Authentication                    | Cafeteria Service, Notifications   |
+| Campus Wallet                 | Authentication                    | -                                  |
 | Smart Campus Map              | Authentication                    | Users (navigation output)          |
 | Cafeteria Service Integration | Campus Wallet, Authentication     | Notification System, Users         |
 | Notification System           | Campus Wallet, Cafeteria Service  | Users                              |
@@ -145,5 +118,5 @@ triggers), Authentication module (account-level alerts)
 The Admin Dashboard is listed as a planned feature in the features list and is not yet
 decomposed into a full module. When implemented it will interface with the Authentication
 module (user management), the Virtual Card module (access logs), and the Campus Wallet
-(transaction monitoring). It is acknowledged here to ensure the decomposition remains
+(simulated transaction monitoring). It is acknowledged here to ensure the decomposition remains
 consistent with the full product vision.
