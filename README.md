@@ -136,7 +136,7 @@ CampusMobi/
 │
 ├── public/
 │   └── index.html
-│
+│   └── index.css
 ├── src/
 │   ├── components/
 │   │   ├── Navbar.js
@@ -152,9 +152,6 @@ CampusMobi/
 │   │   ├── WalletPage.js
 │   │   └── NotificationsPage.js
 │   │
-│   ├── services/
-│   │   ├── AuthService.js
-│   │   └── WalletService.js
 │   │
 │   ├── constants/
 │   │   └── AppConstants.js
