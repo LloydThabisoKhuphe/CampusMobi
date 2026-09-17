@@ -2,61 +2,76 @@
 
 ## Problem Description
 
-Students have to carry physical student cards and deal with campus systems to get things done. This causes a lot of problems like long queues, lost cards and a bad experience when using campus services. Students depend on these cards for things like getting into buildings finding their way and paying for things.
+Students have to carry physical student cards and  rely on multiple disconnected systems to manage their academic and campus activities. This causes a lot of problems like lost cards, difficulty keeping track of schedules, and challenges navigating campus environments. These limitations create an inefficient and sometimes frustrating experience for students when trying to access services or stay organized.
 
 ## Target Users
 
 - Walter Sisulu University students
 - Campus staff and administration
-- Campus service providers like the cafeteria, printing services and gym
 
 ## Distinctive Value Proposition
 
-CampusMobi is a digital platform that replaces the physical student card. It combines navigation, payments and campus services into one website. This means students can do everything they need to do in one place.
+CampusMobi is a **web-based campus assistant** that helps students manage their daily academic and campus activities in one place.
+
+It combines digital identity, scheduling, notifications, and campus navigation into a simple and user-friendly platform, reducing reliance on physical tools and multiple systems.
+
+---
 
 ## Important Aspects
 
-- Virtual Student Card
-    . Students can log in securely using their student IDs or email addresses.
-    . The Campus Wallet
-        . Students can add money to their accounts using payment gateways.
-        . They can pay for printing, food at the cafeteria and gym fees.
-        . They can see their transaction history.
+### Virtual Student Card
 
-- Smart Campus Map
-    . Shows all the buildings, lecture halls, labs, cafeteria, gym and offices on campus.
-    . It also shows the residences.
-    . Students can get real-time directions like on Google Maps but for the campus.
+- Students can log in securely using their student IDs or email addresses.
+- A digital card displays student details and a QR code for identification.
 
-- Service Integration
-    . Students can book a space to print their work.
-    . They can order food from the cafeteria ahead of time which reduces waiting in lines.
-    . They get alerts when their balance is low or when a payment is confirmed.
+### Calendar System (Real)
+- Students can view and manage their academic schedule
+- Events such as classes can be added and viewed
+
+### Schedule Notifications
+- Notifications are triggered automatically based on calendar events
+- Helps students stay informed about upcoming classes and activities
+
+### Campus Map
+- Shows all the buildings, lecture halls, labs, cafeteria, gym and offices on campus.
+- It also shows the residences.
+- Allows users to explore locations and view basic information
+
+### Wallet (Demo)
+- Simulates adding funds and making transactions
+- Demonstrates how a campus payment system could work
+- Does not involve real financial transactions
+
+---
 
 ## Success Metrics
 
 - How many students sign up
 - How many students use CampusMobi every day
-- How many transactions are processed
-- How much time is saved by reducing lines for services
-- How many students use the card instead of the physical card
+- How many notifications triggered
+- How many engagement with different system features
+- User feedback on usability and experience
+
+---
 
 ## Moores Vision Framework
 
 Vision Statement of Moore for CampusMobi:
 
-    For: University students and campus service providers
+**For:** University students
 
-    Who: have to deal with physical student cards, separate systems, long lines and no centralized campus services.
+**Who:** have to rely on physical student cards, separate systems, struggle with managing schedules and no centralized campus services.
 
-    The: CampusMobi
+**The:** CampusMobi
     
-    Is a: platform that helps manage campuses and provides student services.
+**Is a:** web-based campus assistant
 
-    That: gives students a virtual student card, a built-in payment system and interactive campus navigation.
+**That:** provides a virtual student card, a calendar with notifications, and campus navigation.
 
-    This: allows students to easily access campus amenities and services from one platform.
+**This:** allows students to easily access campus amenities and stay organised.
 
-    Unlike: physical student cards, handwritten payments and separate websites for university services
+**Unlike:** physical student cards, and disconnected campus systems
 
-    Our product: is a safe and easy-to-use web application which digitalizes student identification, simplifies payments, improves campus navigation and ultimately Upgrades the campus experience.
+**Our product:** is a safe and easy-to-use web application which digitalizes student identification, and that improves how students manage their daily campus life.
+
+---
