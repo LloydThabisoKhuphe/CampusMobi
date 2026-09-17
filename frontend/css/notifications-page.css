@@ -1,0 +1,26 @@
+/* =============================================================================
+   notifications-page.css — notifications list
+   ============================================================================= */
+
+.notif-list {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.notif-item {
+  display: flex;
+  gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.notif-item:last-child { border-bottom: none; }
+.notif-item.unread { background: rgba(224,165,44,0.06); }
+.notif-icon {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--surface-alt); color: var(--lime);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.notif-title { font-weight: 600; font-size: 0.92rem; }
+.notif-body { color: var(--text-muted); font-size: 0.84rem; margin-top: 2px; }
+.notif-time { color: var(--text-faint); font-size: 0.74rem; margin-top: 4px; }

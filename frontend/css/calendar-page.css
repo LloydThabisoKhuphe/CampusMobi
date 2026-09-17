@@ -1,0 +1,54 @@
+/* =============================================================================
+   calendar-page.css — full calendar page
+   ============================================================================= */
+
+.cal-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.cal-events-card {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+}
+.cal-events-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.cal-events-header h3 { font-size: 1.05rem; }
+
+.event-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.event-form input[type="text"] { flex: 2; min-width: 160px; }
+.event-form input[type="time"] { flex: 1; min-width: 110px; }
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+.event-item:last-child { border-bottom: none; }
+.event-time { font-weight: 700; color: var(--gold); font-size: 0.85rem; width: 56px; flex-shrink: 0; }
+.event-title { flex: 1; font-size: 0.92rem; }
+.event-delete {
+  background: none; border: none; color: var(--text-faint); cursor: pointer; font-size: 0.85rem;
+}
+.event-delete:hover { color: var(--danger); }
+
+.cal-empty { color: var(--text-faint); padding: 16px 0; font-size: 0.88rem; }
+
+@media (max-width: 860px) {
+  .cal-layout { grid-template-columns: 1fr; }
+}
