@@ -1,0 +1,14 @@
+{
+  "name": "campusmobi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CampusMobi — campus assistant for Walter Sisulu University",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n server,client -c yellow,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
