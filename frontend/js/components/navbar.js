@@ -69,7 +69,7 @@ export function renderNavbar(container, currentPath) {
         </button>
 
         <div class="navbar-menu" data-menu hidden>
-          ${isGuest ? '<button data-go="/login">Sign in for full access</button>' : ""}
+          ${isGuest ? '<button data-action="signin">Sign in for full access</button>' : ""}
           <button data-action="logout">Log out</button>
         </div>
       </div>
@@ -86,6 +86,11 @@ export function renderNavbar(container, currentPath) {
     </div>
   `;
 
+
+  //hjhjhh
+ 
+  //hjhjh
+
   container.querySelectorAll("[data-go]").forEach((button) => {
     button.addEventListener("click", () => navigate(button.dataset.go));
   });
@@ -97,7 +102,12 @@ export function renderNavbar(container, currentPath) {
     menu.hidden = !menu.hidden;
   });
 
-  container.querySelector('[data-action="logout"]').addEventListener("click", () => {
+  container.querySelector('[data-action="signin"]')?.addEventListener("click", () =>{
+    Auth.logout(); //clear guest session
+    navigate("/login");
+  });
+
+  container.querySelector('[data-action="logout"]')?.addEventListener("click", () => {
     Auth.logout();
     navigate("/login");
   });

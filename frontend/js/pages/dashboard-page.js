@@ -99,7 +99,10 @@ export async function renderDashboardPage(container) {
     })
   );
 
-  container.querySelector('[data-action="signin"]')?.addEventListener("click", () => navigate("/login"));
+  container.querySelector('[data-action="signin"]')?.addEventListener("click", () =>{
+    Auth.logout(); //clear guest session
+    navigate("/login");
+  });
   container.querySelectorAll("[data-go]").forEach((btn) => btn.addEventListener("click", () => navigate(btn.dataset.go)));
 
   const searchInput = container.querySelector('input[name="search"]');

@@ -44,12 +44,12 @@ export async function renderLoginPage(container, query) {
 
         <div class="login-topbar">
           <div class="login-logo"><span>campus</span><span>Mobi</span></div>
-          <button type="button" class="signup-btn" data-action="signup">SignUp ...</button>
+          <button type="button" class="signup-btn" data-action="signup">Sign Up ...</button>
         </div>
 
         <div class="login-stage">
           <div class="login-card">
-            <h1>SignIn</h1>
+            <h1>Sign In</h1>
 
             ${error ? `<div class="error-banner">${error}</div>` : ""}
             ${
@@ -59,13 +59,13 @@ export async function renderLoginPage(container, query) {
             }
 
             <form class="login-form" novalidate>
-              <input class="field" type="text" placeholder="UserName ..." name="username" value="${username}" autocomplete="username" />
-              <input class="field" type="password" placeholder="password ..." name="password" value="${password}" autocomplete="current-password" />
+              <input class="field" type="text" placeholder="User Name ..." name="username" value="${username}" autocomplete="username" />
+              <input class="field" type="password" placeholder="Password ..." name="password" value="${password}" autocomplete="current-password" />
 
               <button type="button" class="forgot-link" data-action="forgot">forgot password?</button>
 
               <button type="submit" class="signin-btn" ${submitting ? "disabled" : ""}>
-                ${submitting ? "Signing in ..." : "SignIn ..."}
+                ${submitting ? "Signing in ..." : "Sign In ..."}
               </button>
             </form>
 
