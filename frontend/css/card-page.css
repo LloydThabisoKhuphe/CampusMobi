@@ -1,0 +1,82 @@
+/* =============================================================================
+   card-page.css — virtual student card
+   ============================================================================= */
+
+.card-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0 10px;
+}
+
+.student-card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(135deg, #201f14 0%, #171710 60%);
+  border: 1px solid var(--border-soft);
+  border-radius: 26px;
+  padding: 26px 26px 22px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.student-card::before {
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(224,165,44,0.25), transparent 70%);
+  border-radius: 50%;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 26px;
+  position: relative;
+  z-index: 1;
+}
+.card-logo { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; }
+.card-logo span:first-child { color: var(--gold); }
+.card-logo span:last-child { color: var(--lime); }
+.card-role {
+  font-size: 0.68rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.card-body { position: relative; z-index: 1; }
+.card-name { font-size: 1.3rem; font-weight: 800; margin-bottom: 4px; }
+.card-id { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 22px; }
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.card-qr {
+  width: 96px;
+  height: 96px;
+  border-radius: 12px;
+  background: repeating-conic-gradient(#f5f5ef 0% 25%, #14140b 0% 50%) 0 0/12px 12px;
+  flex-shrink: 0;
+  border: 4px solid #f5f5ef;
+}
+.card-meta { font-size: 0.76rem; color: var(--text-faint); text-align: right; }
+.card-meta strong { color: var(--text); display: block; font-size: 0.82rem; }
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 26px;
+}
+

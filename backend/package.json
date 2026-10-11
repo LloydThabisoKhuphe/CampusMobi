@@ -1,0 +1,13 @@
+{
+  "name": "campusmobi-backend",
+  "version": "1.0.0",
+  "description": "Express API + static server for the CampusMobi demo app",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

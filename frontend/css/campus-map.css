@@ -1,0 +1,55 @@
+/* =============================================================================
+   campus-map.css — schematic pin map used on the Map page
+   ============================================================================= */
+
+.map-canvas {
+  position: relative;
+  background: var(--surface-alt);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  height: 340px;
+  overflow: hidden;
+  background-image:
+    linear-gradient(var(--border-soft) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.map-pin {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.map-pin-dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50% 50% 50% 0;
+  background: var(--gold);
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.map-pin.active .map-pin-dot { background: var(--lime); }
+
+.map-pin-dot span {
+  transform: rotate(45deg);
+  font-size: 0.7rem;
+}
+
+.map-pin-label {
+  margin-top: 4px;
+  font-size: 0.68rem;
+  background: rgba(13,13,12,0.85);
+  padding: 2px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+  color: var(--text);
+}
