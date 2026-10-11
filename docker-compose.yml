@@ -1,0 +1,24 @@
+services:
+  db:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: campusmobi
+      MYSQL_USER: campusmobi
+      MYSQL_PASSWORD: campusmobi
+      MYSQL_ROOT_PASSWORD: campusmobi
+    ports:
+      - "3306:3306"
+    volumes:
+      - campusmobi_db_data:/var/lib/mysql
+      # Everything here runs once, in filename order, the very first time
+      # the volume above is created — see db/README.md.
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-ucampusmobi", "-pcampusmobi"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  campusmobi_db_data:
